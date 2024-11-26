@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} {{b.bookname}}-詳細資料 {% endblock %}
+
+{% block content %} 
+
+<p>書名:{{ b.bookname }}</p>
+<p>作者:{{ b.author }}</p>
+<p>出版社:{{ b.publisher }}</p>
+<p>出版日期:{{ b.pubdate }}</p>
+<p>定價:{{ b.price }}</p>
+<p>簡介:{{ b.content }}</p>
+
+{% endblock %}
